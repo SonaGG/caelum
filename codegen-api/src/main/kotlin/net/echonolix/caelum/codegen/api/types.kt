@@ -14,7 +14,6 @@ public enum class NativeDataType(
     Long(LONG, LONG_ARRAY, "JAVA_LONG"),
     Float(FLOAT, FLOAT_ARRAY, "JAVA_FLOAT"),
     Double(DOUBLE, DOUBLE_ARRAY, "JAVA_DOUBLE"),
-    Char(CHAR, CHAR_ARRAY, "JAVA_CHAR"),
     Boolean(BOOLEAN, BOOLEAN_ARRAY, "JAVA_BOOLEAN");
 
     public val nNativeDataCName: ClassName = ClassName(CaelumCodegenHelper.basePkgName, "N${name}NativeData")
@@ -49,10 +48,6 @@ public enum class CoreNativeTypes(
     NDouble(
         KotlinPrimitiveType.Double,
         NativeDataType.Double
-    ),
-    NChar(
-        KotlinPrimitiveType.Char,
-        NativeDataType.Char
     ),
     NInt8(
         KotlinPrimitiveType.Byte,

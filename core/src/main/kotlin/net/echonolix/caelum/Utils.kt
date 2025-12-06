@@ -9,6 +9,7 @@ import kotlin.contracts.contract
 
 public typealias NSize = NInt64
 public typealias NInt = NInt32
+public typealias NChar = NInt8
 
 public fun String.c_str(allocator: AllocateScope): NPointer<NChar> {
     val address = allocator._malloc(LWJGLMemoryUtil.memLengthUTF8(this).toLong(), 8L)
