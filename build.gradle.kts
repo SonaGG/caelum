@@ -4,6 +4,7 @@ allprojects {
 
     repositories {
         maven("https://pkg.frst.cloud/releases")
+        maven("https://maven.endoqa.io/")
         mavenCentral()
     }
 }
