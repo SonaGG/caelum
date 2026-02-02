@@ -13,4 +13,12 @@ dependencyResolutionManagement {
     }
 }
 
+pluginManagement {
+    repositories {
+        maven("https://pkg.frst.cloud/releases")
+        mavenCentral()
+        gradlePluginPortal()
+    }
+}
+
 rootProject.name = "buildSrc"

@@ -11,9 +11,15 @@ java {
     }
 }
 
+repositories {
+    maven("https://pkg.frst.cloud/releases")
+    mavenCentral()
+    gradlePluginPortal()
+}
+
 dependencies {
     // Add a dependency on the Kotlin Gradle plugin, so that convention plugins can apply it.
     implementation(libs.kotlinGradlePlugin)
     implementation(libs.kotlinDSLGradlePlugin)
-    implementation("net.echonolix:ktgen")
+    implementation("net.echonolix:ktgen:1.0.1")
 }

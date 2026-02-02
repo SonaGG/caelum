@@ -8,14 +8,17 @@ dependencyResolutionManagement {
 }
 
 pluginManagement {
-    includeBuild("../ktgen")
+    repositories {
+        maven("https://pkg.frst.cloud/releases")
+        mavenCentral()
+        gradlePluginPortal()
+    }
 
     plugins {
         id("org.jetbrains.kotlin.jvm") version "2.1.20"
+        id("gg.sona.ktgen") version "1.0.1"
     }
 }
-
-includeBuild("../ktgen")
 
 include(
     ":codegen-c",
