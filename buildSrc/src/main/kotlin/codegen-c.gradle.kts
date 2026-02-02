@@ -7,7 +7,7 @@ import java.util.concurrent.atomic.AtomicBoolean
 
 plugins {
     id("buildsrc.convention.published-module")
-    id("net.echonolix.ktgen")
+    id("gg.sona.ktgen")
 }
 
 val codegenCExtension = extensions.create("codegenC", CodegenCExtension::class.java)

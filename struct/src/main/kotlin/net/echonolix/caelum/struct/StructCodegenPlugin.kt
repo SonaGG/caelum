@@ -6,7 +6,7 @@ import org.gradle.api.tasks.SourceSetContainer
 
 class StructCodegenPlugin : Plugin<Project> {
     override fun apply(project: Project) {
-        project.plugins.apply("net.echonolix.ktgen")
+        project.plugins.apply("gg.sona.ktgen")
 
         val sourceSets = project.extensions.getByName("sourceSets") as SourceSetContainer
         val main = sourceSets.getByName("main")

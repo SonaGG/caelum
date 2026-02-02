@@ -1,6 +1,6 @@
 plugins {
     id("buildsrc.convention.published-module")
-    id("net.echonolix.ktgen")
+    id("gg.sona.ktgen")
 }
 
 dependencies {
@@ -12,5 +12,5 @@ kotlin {
 }
 
 dependencies {
-    extraJarEntries(rootProject.files("README.MD"))
+    extraJarEntries(rootProject.files("README.md"))
 }

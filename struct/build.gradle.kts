@@ -18,7 +18,7 @@ dependencies {
 gradlePlugin {
     plugins {
         create("caelum-struct") {
-            id = "net.echonolix.caelum-struct"
+            id = "gg.sona.caelum-struct"
             implementationClass = "net.echonolix.caelum.struct.StructCodegenPlugin"
             displayName = "caelum-struct"
         }

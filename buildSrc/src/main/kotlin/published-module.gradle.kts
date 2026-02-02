@@ -18,6 +18,17 @@ publishing {
             from(components["java"])
         }
     }
+    repositories {
+        maven {
+            url = uri("https://pkg.frst.cloud/releases")
+            name = "frstCloudReleases"
+
+            credentials {
+                username = providers.environmentVariable("USERNAME").getOrElse("default")
+                password = providers.environmentVariable("PASSWORD").getOrElse("default")
+            }
+        }
+    }
 }
 
 val extraJarEntries by configurations.registering
